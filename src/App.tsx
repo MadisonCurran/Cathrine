@@ -1,26 +1,22 @@
 import React from 'react';
-import logo from './logo.svg';
+import Navigation from './Components/Navigation'
+import Countdown from './Components/Countdown'
 import './App.css';
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    return (
+        <div className="App">
+            <div className="App-header">
+                <h1>Add Names Here</h1>
+                <p>Add date here</p>
+                <Navigation></Navigation>
+                <Countdown/>
+            </div>
+            <div className="App-footer">
+                <p>Short blurb plz RSPV info above thank you much excite</p>
+            </div>
+        </div>
+    );
 }
 
 export default App;
