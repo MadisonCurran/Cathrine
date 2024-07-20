@@ -11,9 +11,8 @@ function getTimeTill() {
   const hours = Math.floor((timeLeft / (1000 * 60 * 60)) % 24);
   const minuets = Math.floor((timeLeft / (1000 * 60)) % 60);
   const seconds = Math.floor((timeLeft / 1000) % 60);
-  return {days, hours, minuets, seconds}
+  return { days, hours, minuets, seconds };
 }
-
 
 export default function Countdown() {
   const [timeLeft, setTimeLeft] = useState(() => getTimeTill());
@@ -25,9 +24,9 @@ export default function Countdown() {
 
     return () => {
       clearInterval(timer);
-    }
+    };
   }, []);
-  
+
   return (
     <div className="countdownBorder">
       <h2 className="countdownHeading">Countdown</h2>
@@ -36,12 +35,10 @@ export default function Countdown() {
           const label = timeLeft[0];
           const time = timeLeft[1];
           return (
-            <>
-              <div className="countdownCard">
-                <span className="timeLeft">{time}</span>
-                <span className="timeLabel">{label}</span>
-              </div>
-            </>
+            <div className="countdownCard" key={label}>
+              <span className="timeLeft">{time}</span>
+              <span className="timeLabel">{label}</span>
+            </div>
           );
         })}
       </div>
