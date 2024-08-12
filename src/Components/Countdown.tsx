@@ -3,7 +3,7 @@ import "./countdown.css";
 
 //ToDo change theBigDay variable to correct date!!
 
-const theBigDay = new Date("2025-03-16T13:00:00").getTime();
+const theBigDay = new Date("2025-05-25T13:00:00").getTime();
 
 function getTimeTill() {
   const timeLeft = theBigDay - new Date().getTime();
