@@ -1,7 +1,7 @@
 export default function Location () {
     return (
         <>
-        <p>Location</p>
+        <p>Location: super cute wedding <a href={""}>venue</a> TBA</p>
         </>
     );
 }

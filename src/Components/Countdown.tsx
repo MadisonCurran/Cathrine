@@ -29,7 +29,6 @@ export default function Countdown() {
 
   return (
     <div className="countdownBorder">
-      <h2 className="countdownHeading">Countdown</h2>
       <div className="countdown">
         {Object.entries(timeLeft).map((timeLeft) => {
           const label = timeLeft[0];

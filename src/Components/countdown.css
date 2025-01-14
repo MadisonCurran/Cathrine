@@ -4,10 +4,6 @@
     align-items: center;
   }
 
-.countdownHeading {
-    font-size: 2rem;
-  }
-
 .countdown {
     display: flex;
     gap: 2rem;
