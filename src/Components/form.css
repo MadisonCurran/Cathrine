@@ -12,16 +12,18 @@
 
 .attendanceSelector {
     padding-bottom: 1rem;
+    display: flex;
 }
 
 .radioButton {
-    margin-right: 1rem;
+    margin-right: 0.5rem;
     width: 1.5rem;
     height: 1.5rem;
 }
 
 .radioLabel {
     font-size: 1.5rem;
+    padding-right: 1rem;
 }
 
 .textLabel {

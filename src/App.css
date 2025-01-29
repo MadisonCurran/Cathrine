@@ -8,24 +8,39 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
   font-size: calc(10px + 2vmin);
   color: #2d2424;
 }
 
-.Section
-{
-  display: flex;
-  flex-direction: row;
-  width: 100%;
-  border: solid black 1px;
-  justify-content: space-between;
-  margin: 2rem;
+.LargePhoto {
+  width: 100vw;
+  height: 20rem;
+  background-color: lightpink;
 }
 
-.LocalWrapper, .TransWrapper
-{
-  width: 50%;
+.App-body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: #2d2424;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+.SmallPhoto {
+  height: 20rem;
+  width: 15rem;
+  margin: 0 2rem 2rem 2rem;
+  background-color: lightpink;
+}
+
+.VIP {
+  height: 20rem;
+  width: 15rem;
+  background-color: lightpink;
+  margin: 1rem;
 }
 
 .App-footer {

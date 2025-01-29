@@ -22,8 +22,6 @@ export default function Form () {
                         checked={isSelected('yes')}
                         onChange={handleImputChange}/>
                     <label className={"radioLabel"} htmlFor="yes">Yes</label>
-                </div>
-                <div className={"attendanceSelector"}>
                     <input
                         className={"radioButton"}
                         type="radio"
@@ -34,7 +32,7 @@ export default function Form () {
                         onChange={handleImputChange}/>
                     <label className={"radioLabel"} htmlFor="no">No</label>
                 </div>
-                <label className={"textLabel"} htmlFor="allergies">Please note any allergies & dietary requirements: </label>
+                <label className={"textLabel"} htmlFor="allergies">Note any dietary requirements: </label>
                 <input type="text"
                        id="allergies"
                        name="allergies">
